@@ -1,13 +1,13 @@
 import numpy as np 
-array = np.array([10,20,30,40,50,60])
+arr = list(map(int, input("Please input something with comma:").split(",")))
 
-def rightshift(a):
-    
-    i = len(a)-1
-    while i > 0:
-        a[i] = a[i-1]
-        i -= 1
-    a[0] = 0
+def rightshift(rs):
+    i = len(rs)-1
+    while i>0:
+        rs[i] = rs[i-1]
+        i-= 1
+        
+    rs[0] = 0
 
-rightshift(array)
-print(array)
+rightshift(arr)
+print(arr)
