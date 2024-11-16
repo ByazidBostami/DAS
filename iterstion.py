@@ -20,4 +20,11 @@ def iterationforloop(b):
     return newar
     
 print(iterationforloop(array))
-    
+
+def whileloopit(ar):
+    i = 0
+    while i< len(ar):
+        print(ar[i])
+        i+=1
+whileloopit(array)
+
